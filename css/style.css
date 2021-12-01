@@ -1,3 +1,35 @@
+/* подключаем шрифты локально */
+@font-face {
+   font-family: 'NewYorkExtraLargeBold';
+   src: local('NewYorkExtraLargeBold'), url(./../assets/fonts/NewYorkExtraLargeBold.otf) format('otf');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SFUIDisplayBold';
+   src: local('SFUIDisplayBold'), url(./../assets/fonts/SFUIDisplay-Bold.woff) format('woff');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SFUIDisplayLight';
+   src: local('SFUIDisplayLight'), url(./../assets/fonts/SFUIDisplay-Light.woff) format('woff');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SFUIDisplayRegular';
+   src: local('SFUIDisplayRegular'), url(./../assets/fonts/SFUIDisplay-Regular.woff) format('woff');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'SFUIDisplaySemibold';
+   src: local('SFUIDisplaySemibold'), url(./../assets/fonts/SFUIDisplay-Semibold.woff) format('woff');
+   font-display: swap;
+}
+
+/* Стили для ограничивающего контейнера */
 .container {
    max-width: 1130px;
    margin: 0 auto;
@@ -24,14 +56,24 @@
 
 .nav__list {
    height: 48px;
-   max-width: 508px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 
 .nav__item {
    padding: 4px 24px;
+}
+
+.nav__link {
+   font-family: SF UI Display, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 40px;
+   letter-spacing: 0.01em;
+   text-align: center;
+   color: #585858;
+
 }
 
 .header__search {
@@ -50,6 +92,14 @@
    -moz-border-radius: 4px;
    -ms-border-radius: 4px;
    -o-border-radius: 4px;
+
+   font-family: SF UI Display, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: 0.01em;
+   text-align: center;
 }
 
 .header__btn {
@@ -60,6 +110,7 @@
 .header__btn--sign-in {
    color: #585858;
    background-color: transparent;
+   font-weight: 400;
 }
 
 .header__btn--sign-in:hover {
@@ -72,8 +123,16 @@
 }
 
 .main__title {
-   width: 870px;
+   width: 770px;
    margin-bottom: 56px;
+   font-family: New York Extra Large;
+   font-size: 112px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 112px;
+   letter-spacing: -0.04em;
+   text-align: left;
+
 }
 
 .main__title-s {
@@ -90,6 +149,14 @@
 .main__text {
    width: 290px;
    margin-bottom: 48px;
+   font-family: SF UI Display, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0.01em;
+   text-align: left;
+
 }
 
 .main__image {
@@ -104,7 +171,16 @@
 }
 
 .galery__title {
+   display: block;
+   max-width: 500px;
    margin-bottom: 40px;
+   text-align: center;
+   font-family: New York Extra Large;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 60px;
+   letter-spacing: -0.04em;
    text-align: center;
 }
 
@@ -130,7 +206,7 @@
    margin-bottom: 40px;
 }
 
-.needs__inner{
+.needs__inner {
    display: flex;
 }
 
@@ -166,9 +242,25 @@
 }
 
 /*Стили для длока true*/
+.true {
+   background-color: #F9F9F9;
+}
+
 .true__top {
    padding: 64px 0;
 }
+
+/*&::before {
+   content: "";
+   background-image: url(./../images/Arrow.svg);
+   display: block;
+   background-repeat: no-repeat;
+   height: 6px;
+   width: 11px;
+   position: absolute;
+   top: 9px;
+   left: -20px;
+}*/
 
 .true__title {
    padding-bottom: 40px;
@@ -184,9 +276,15 @@
    display: flex;
 }
 
+.true__bottom-img {
+   background-blend-mode: multiply;
+
+}
+
 .true__bottom-title {
    padding-top: 236px;
    margin-bottom: 64px;
+   max-width: 535px;
 }
 
 .true__bottom-span {
@@ -195,6 +293,7 @@
 
 /*Стили для блока Partners*/
 .partners {
+   background-color: #F9F9F9;
    padding: 64px 0;
 }
 
@@ -209,6 +308,7 @@
 
 /*Стили для блока Footer*/
 .footer {
+   background-color: #F9F9F9;
    border-top: 1px solid #F0F0F0;
 }
 
@@ -220,7 +320,7 @@
    justify-content: space-between;
 }
 
-.footer__list{
+.footer__list {
    display: flex;
 }
 
