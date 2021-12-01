@@ -170,18 +170,21 @@
    padding: 64px;
 }
 
-.galery__title {
-   display: block;
-   max-width: 500px;
-   margin-bottom: 40px;
-   text-align: center;
+.title {
    font-family: New York Extra Large;
    font-size: 48px;
    font-style: normal;
    font-weight: 600;
    line-height: 60px;
    letter-spacing: -0.04em;
+}
+
+.galery__title {
+   margin: 0 auto;
+   max-width: 500px;
+   margin-bottom: 40px;
    text-align: center;
+
 }
 
 .galerry__wrapper {
@@ -203,11 +206,13 @@
 }
 
 .needs__title {
+   max-width: 400px;
    margin-bottom: 40px;
 }
 
 .needs__inner {
    display: flex;
+   justify-content: space-between;
 }
 
 .needs__image {
@@ -217,12 +222,13 @@
 }
 
 .offer__wrapper {
-   margin-bottom: 72px;
+   padding-bottom: 24px;
 }
 
 .offer__item {
    display: flex;
    justify-content: center;
+   padding-bottom: 48px;
 }
 
 .offer__icon-box {
@@ -235,10 +241,29 @@
 
 .offer__title {
    margin-bottom: 8px;
+   font-family: SF UI Display, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 26px;
+   letter-spacing: 0.01em;
+   text-align: left;
+}
+
+.offer__text {
+   font-family: SF UI Display, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0.01em;
+   text-align: left;
 }
 
 .offer__btn {
    text-align: center;
+   margin: 0 auto;
+   display: block;
 }
 
 /*Стили для длока true*/
@@ -264,31 +289,71 @@
 
 .true__title {
    padding-bottom: 40px;
+   font-weight: 700;
+   max-width: 370px;
 }
 
 .true-slider {
    max-width: 765px;
    margin-bottom: 60px;
+   position: relative;
+}
+
+.true-slider::before {
+   content: "";
+   background-image: url(./../assets/images/pseudo.svg);
+   display: block;
+   background-repeat: no-repeat;
+   height: 40px;
+   width: 57px;
+   position: absolute;
+   top: 9px;
+   left: -112px;
+}
+
+.true__text {
+   font-family: SF UI Display, sans-serif;
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 51px;
+   letter-spacing: 0.01em;
+   text-align: left;
+   padding-bottom: 60px;
+}
+
+.true__autor-name {
+   font-family: SF UI Display, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 26px;
+   letter-spacing: 0.01em;
+   text-align: left;
 }
 
 .true__bottom {
    padding: 64px 0;
    display: flex;
+   justify-content: space-between;
 }
 
 .true__bottom-img {
    background-blend-mode: multiply;
-
 }
 
 .true__bottom-title {
    padding-top: 236px;
    margin-bottom: 64px;
-   max-width: 535px;
+   max-width: 480px;
 }
 
 .true__bottom-span {
    color: #FD665E;
+}
+
+.true__btn {
+   width: 205px;
 }
 
 /*Стили для блока Partners*/
@@ -314,7 +379,6 @@
 
 .footer__wrapper {
    height: 208px;
-
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -324,6 +388,14 @@
    display: flex;
 }
 
-.footer__item {
+.footer__link {
    margin-right: 48px;
+   font-family: SF UI Display, sans-serif;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 40px;
+   letter-spacing: 0.01em;
+   text-align: center;
+   color: #585858;
 }
