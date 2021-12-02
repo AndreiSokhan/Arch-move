@@ -275,18 +275,6 @@
    padding: 64px 0;
 }
 
-/*&::before {
-   content: "";
-   background-image: url(./../images/Arrow.svg);
-   display: block;
-   background-repeat: no-repeat;
-   height: 6px;
-   width: 11px;
-   position: absolute;
-   top: 9px;
-   left: -20px;
-}*/
-
 .true__title {
    padding-bottom: 40px;
    font-weight: 700;
@@ -311,7 +299,18 @@
    left: -112px;
 }
 
-.true__text {
+/* ниже собранеы все стили для slider */
+.slick-track {
+   display: flex;
+}
+
+.slick-list {
+   overflow: hidden;
+}
+
+
+
+.true-slider__text {
    font-family: SF UI Display, sans-serif;
    font-size: 32px;
    font-style: normal;
