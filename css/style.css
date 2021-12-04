@@ -318,7 +318,7 @@
 .slick-arrow {
    cursor: pointer;
    position: absolute;
-   bottom: -82px;
+   bottom: 6px;
    z-index: 10;
    font-size: 0;
    /*height: 48px;
@@ -340,6 +340,10 @@
    width: 16px;
 }
 
+.slick-disabled {
+   opacity: 0.5;
+}
+
 
 
 
@@ -351,6 +355,7 @@
    line-height: 51px;
    letter-spacing: 0.01em;
    text-align: left;
+   margin-bottom: 60px;
 }
 
 .true__autor-name {

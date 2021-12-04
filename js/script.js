@@ -4,8 +4,10 @@ $(document).ready(function(){
       dots:false,
       //slidesToShow:1;
       //slidesToScroll:2;
-      speed:300,
+      speed:1000,
       easing:'ease',
-      infinite:false,
+      infinite:true,
+      autoplay:true,
+      autoplaySpeed:4000,
    });
 });
