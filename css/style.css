@@ -344,6 +344,9 @@
    opacity: 0.5;
 }
 
+.true-slider__item {
+   text-align: center;
+}
 
 
 
@@ -386,6 +389,10 @@
 
 .true__bottom-span {
    color: #FD665E;
+}
+
+.true__autor {
+   text-align: left;
 }
 
 .true__btn {
