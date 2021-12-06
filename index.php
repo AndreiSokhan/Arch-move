@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-   <link rel="stylesheet" href="./css/normalize.css">
-   <link rel="stylesheet" href="./css/style.css">
-   <title>Arch-move</title>
-</head>
-
-<body>
-   <header class="header">
-      <div class="header__logo-box">
-         <img class="header__logo logo" src="./assets/images/logo.svg" alt="">
-      </div>
-      <div class="header__wrapper">
-         <nav class="header__nav nav">
-            <ul class="nav__list">
-               <li class="nav__item"><a href="#" class="nav__link">Design Gallery</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">List of Architect</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">Articles</a></li>
-               <li class="nav__item"><a href="#" class="nav__link">How it Works</a></li>
-            </ul>
-         </nav>
-         <div class="header__registration">
-            <img class="header__search" src="./assets/images/search.svg" alt="">
-            <button class="header__btn btn header__btn--sign-in">Sign In</button>
-            <button class="header__btn btn header__btn--sign-up">Sign Up</button>
-         </div>
-      </div>
-   </header>
+<?php get_header(); ?>
 
    <section class="main">
       <div class="container">
@@ -156,31 +122,4 @@
       </div>
    </section>
 
-   <footer class="footer">
-      <div class="container">
-         <div class="footer__wrapper">
-            <ul class="footer__list">
-               <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-               <li class="footer__item"><a href="#" class="footer__link">How it Works</a></li>
-               <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
-               <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-               <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-            </ul>
-            <div class="footer__logo-box">
-               <img class="footer__logo logo" src="./assets/images/logo.svg" alt="">
-            </div>
-         </div>
-      </div>
-   </footer>
-
-
-   <!-- подключаем файлы .js -->
-   <!-- подключаем библиотеку для слайдера Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <!-- подключаем файл слайдера -->
-   <script src="js/slick.min.js"></script>
-   <!-- подключаем файл скрипты нашего слайдера-->
-   <script src="js/script.js"></script>
-</body>
-
-</html>
+   <?php get_footer(); ?>
