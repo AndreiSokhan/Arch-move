@@ -9,20 +9,21 @@
                <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
             </ul>
             <div class="footer__logo-box">
-               <img class="footer__logo logo" src="./assets/images/logo.svg" alt="">
+               <img class="footer__logo logo" src="<?php echo IMG_DIR; ?>/logo.svg" alt="">
             </div>
          </div>
       </div>
    </footer>
 
+   <?php wp_footer(); ?>
 
    <!-- подключаем файлы .js -->
    <!-- подключаем библиотеку для слайдера Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
    <!-- подключаем файл слайдера -->
-   <script src="js/slick.min.js"></script>
+   <!--<script src="js/slick.min.js"></script>-->
    <!-- подключаем файл скрипты нашего слайдера-->
-   <script src="js/script.js"></script>
+   <!--<script src="js/script.js"></script>-->
 </body>
 
 </html>

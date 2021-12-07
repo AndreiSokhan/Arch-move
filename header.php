@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="./css/normalize.css">
+   <!--<link rel="stylesheet" href="./css/normalize.css">-->
    <!--<link rel="stylesheet" href="./css/style.css">-->
 
    <?php wp_head(); ?>
@@ -17,7 +17,7 @@
 <body>
    <header class="header">
       <div class="header__logo-box">
-         <img class="header__logo logo" src="./assets/images/logo.svg" alt="">
+         <img class="header__logo logo" src="<?php bloginfo( 'template_url' ) ?>./assets/images/logo.svg" alt="">
       </div>
       <div class="header__wrapper">
          <nav class="header__nav nav">

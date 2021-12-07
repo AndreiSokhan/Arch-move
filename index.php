@@ -9,7 +9,7 @@
                   guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
                <button class="main__btn btn">Free Consultation</button>
             </div>
-            <img class="main__image" src="./assets/images/main-img.png" alt="">
+            <img class="main__image" src="<?php echo IMG_DIR; ?>/main-img.png" alt="">
          </div>
       </div>
    </section>
@@ -18,12 +18,12 @@
       <div class="container">
          <h2 class="galery__title title">Build professional valuable room for you</h2>
          <div class="galerry__wrapper">
-            <img class="galery__image" src="./assets/images/galery-img1.jpg" alt="">
-            <img class="galery__image" src="./assets/images/galery-img2.jpg" alt="">
-            <img class="galery__image" src="./assets/images/galery-img3.jpg" alt="">
-            <img class="galery__image" src="./assets/images/galery-img4.jpg" alt="">
-            <img class="galery__image" src="./assets/images/galery-img5.jpg" alt="">
-            <img class="galery__image" src="./assets/images/galery-img6.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img1.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img2.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img3.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img4.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img5.jpg" alt="">
+            <img class="galery__image" src="<?php echo IMG_DIR; ?>/galery-img6.jpg" alt="">
          </div>
       </div>
    </section>
@@ -32,12 +32,12 @@
       <div class="container">
          <h2 class="needs__title title">Build your needs with Archmove</h2>
          <div class="needs__inner">
-            <img class="needs__image" src="./assets/images/needs-img.jpg" alt="">
+            <img class="needs__image" src="<?php echo IMG_DIR; ?>/needs-img.jpg" alt="">
             <div class="needs__offer offer">
                <div class="offer__wrapper">
                   <div class="offer__item">
                      <div class="offer__icon-box">
-                        <img class="offer__icon" src="./assets/images/needs-1.svg" alt="">
+                        <img class="offer__icon" src="<?php echo IMG_DIR; ?>/needs-1.svg" alt="">
                      </div>
                      <div class="offer__info">
                         <h3 class="offer__title">100% guaranteed project completion</h3>
@@ -47,7 +47,7 @@
                   </div>
                   <div class="offer__item">
                      <div class="offer__icon-box">
-                        <img class="offer__icon" src="./assets/images/needs-2.svg" alt="">
+                        <img class="offer__icon" src="<?php echo IMG_DIR; ?>/needs-2.svg" alt="">
                      </div>
                      <div class="offer__info">
                         <h3 class="offer__title">No additional fees</h3>
@@ -57,7 +57,7 @@
                   </div>
                   <div class="offer__item">
                      <div class="offer__icon-box">
-                        <img class="offer__icon" src="./assets/images/needs-3.svg" alt="">
+                        <img class="offer__icon" src="<?php echo IMG_DIR; ?>/needs-3.svg" alt="">
                      </div>
                      <div class="offer__info">
                         <h3 class="offer__title">Get escort from the Team</h3>
@@ -100,7 +100,7 @@
             </div>-->
          </div>
          <div class="true__bottom">
-            <img class="true__bottom-img" src="./assets/images/project-img.png" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/project-img.png" alt="">
             <div class="true__bottom-content">
                <h2 class="true__bottom-title title">Realize your dream project with <span class="true__bottom-span">Archmove</span></h2>
                <button class="true__btn btn">FREE CONSULTATION</button>
@@ -113,13 +113,13 @@
       <div class="container">
          <h2 class="partners__title title">Our Partners</h2>
          <div class="partners__logo">
-            <img class="true__bottom-img" src="./assets/images/partners-1.svg" alt="">
-            <img class="true__bottom-img" src="./assets/images/partners-2.svg" alt="">
-            <img class="true__bottom-img" src="./assets/images/partners-3.svg" alt="">
-            <img class="true__bottom-img" src="./assets/images/partners-4.svg" alt="">
-            <img class="true__bottom-img" src="./assets/images/partners-5.svg" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/partners-1.svg" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/partners-2.svg" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/partners-3.svg" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/partners-4.svg" alt="">
+            <img class="true__bottom-img" src="<?php echo IMG_DIR; ?>/partners-5.svg" alt="">
          </div>
       </div>
    </section>
 
-   <?php get_footer(); ?>
+   <?php get_footer(); ?> 

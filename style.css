@@ -7,31 +7,31 @@ Theme name: Arch Move
 /* подключаем шрифты локально */
 @font-face {
    font-family: 'NewYorkExtraLargeBold';
-   src: local('NewYorkExtraLargeBold'), url(./../assets/fonts/NewYorkExtraLargeBold.otf) format('otf');
+   src: local('NewYorkExtraLargeBold'), url(./assets/fonts/NewYorkExtraLargeBold.otf) format('otf');
    font-display: swap;
 }
 
 @font-face {
    font-family: 'SFUIDisplayBold';
-   src: local('SFUIDisplayBold'), url(./../assets/fonts/SFUIDisplay-Bold.woff) format('woff');
+   src: local('SFUIDisplayBold'), url(./assets/fonts/SFUIDisplay-Bold.woff) format('woff');
    font-display: swap;
 }
 
 @font-face {
    font-family: 'SFUIDisplayLight';
-   src: local('SFUIDisplayLight'), url(./../assets/fonts/SFUIDisplay-Light.woff) format('woff');
+   src: local('SFUIDisplayLight'), url(./assets/fonts/SFUIDisplay-Light.woff) format('woff');
    font-display: swap;
 }
 
 @font-face {
    font-family: 'SFUIDisplayRegular';
-   src: local('SFUIDisplayRegular'), url(./../assets/fonts/SFUIDisplay-Regular.woff) format('woff');
+   src: local('SFUIDisplayRegular'), url(./assets/fonts/SFUIDisplay-Regular.woff) format('woff');
    font-display: swap;
 }
 
 @font-face {
    font-family: 'SFUIDisplaySemibold';
-   src: local('SFUIDisplaySemibold'), url(./../assets/fonts/SFUIDisplay-Semibold.woff) format('woff');
+   src: local('SFUIDisplaySemibold'), url(./assets/fonts/SFUIDisplay-Semibold.woff) format('woff');
    font-display: swap;
 }
 
@@ -295,7 +295,7 @@ Theme name: Arch Move
 
 .true-slider::before {
    content: "";
-   background-image: url(./../assets/images/pseudo.svg);
+   background-image: url(./assets/images/pseudo.svg);
    display: block;
    background-repeat: no-repeat;
    height: 40px;
@@ -334,14 +334,14 @@ Theme name: Arch Move
 
 .slick-prev {
    right: 56px;
-   background: url('../assets/images/arrow-prev.svg') 0 0 / 100% no-repeat;
+   background: url('./assets/images/arrow-prev.svg') 0 0 / 100% no-repeat;
    height: 14px;
    width: 16px;
 }
 
 .slick-next {
    right: 0px;
-   background: url('../assets/images/arrow-next.svg') 0 0 / 100% no-repeat;
+   background: url('./assets/images/arrow-next.svg') 0 0 / 100% no-repeat;
    height: 14px;
    width: 16px;
 }
