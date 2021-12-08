@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-   <section class="main">
+   <section class="main" id="main">
       <div class="container">
          <h1 class="main__title">Build Your Dream <span class="main__title-s">House</span></h1>
          <div class="main__wrapper">
@@ -14,7 +14,7 @@
       </div>
    </section>
 
-   <section class="galery">
+   <section class="galery" id="galery">
       <div class="container">
          <h2 class="galery__title title">Build professional valuable room for you</h2>
          <div class="galerry__wrapper">
@@ -28,7 +28,7 @@
       </div>
    </section>
 
-   <section class="needs">
+   <section class="needs" id="needs">
       <div class="container">
          <h2 class="needs__title title">Build your needs with Archmove</h2>
          <div class="needs__inner">
@@ -71,7 +71,7 @@
       </div>
    </section>
 
-   <section class="true">
+   <section class="true" id="true">
       <div class="container">
          <div class="true__top">
             <h2 class="true__title title">Sound Too Good To Be True?</h2>
@@ -109,7 +109,7 @@
       </div>
    </section>
 
-   <section class="partners">
+   <section class="partners" id="partners">
       <div class="container">
          <h2 class="partners__title title">Our Partners</h2>
          <div class="partners__logo">

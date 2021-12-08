@@ -8,9 +8,11 @@ define('JS_DIR', THEME_ROOT . '/assets/js');
 define('IMG_DIR', THEME_ROOT . '/assets/images');
 
 
-
+//хуки
 add_action( 'wp_enqueue_scripts', 'arch_style' );
 add_action( 'wp_enqueue_scripts', 'arch_scripts' );
+add_action( 'after_setup_theme', 'arch_register_nav_menu' );
+
 
 
 function arch_style() {
@@ -28,3 +30,8 @@ function arch_scripts() {
 	wp_enqueue_script( 'script-script', JS_DIR . '/script.js', array('jquery'), null);
 	wp_enqueue_script( 'slick-script', JS_DIR . '/slick.min.js', array('jquery'), null);
 }  
+
+function arch_register_nav_menu() {
+	register_nav_menu( 'top_menu', 'Меню в шапке' );
+	register_nav_menu( 'bottom_menu', 'Меню в подвале' );
+}
