@@ -48,6 +48,7 @@ Theme name: Arch Move
    padding: 0 50px;
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
 
 .header__wrapper {

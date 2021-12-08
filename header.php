@@ -16,9 +16,7 @@
 
 <body>
    <header class="header">
-      <div class="header__logo-box">
-         <img class="header__logo logo" src="<?php bloginfo( 'template_url' ) ?>./assets/images/logo.svg" alt="">
-      </div>
+         <a href="#" class="header__logo-link"><img class="header__logo logo" src="<?php bloginfo( 'template_url' ) ?>./assets/images/logo.svg" alt=""></a>
       <div class="header__wrapper">
          <nav class="header__nav nav">
             <ul class="nav__list">

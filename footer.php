@@ -8,9 +8,7 @@
                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
                <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
             </ul>
-            <div class="footer__logo-box">
-               <img class="footer__logo logo" src="<?php echo IMG_DIR; ?>/logo.svg" alt="">
-            </div>
+               <a href="#" class="footer__logo-link"><img class="footer__logo logo" src="<?php echo IMG_DIR; ?>/logo.svg" alt=""></a>
          </div>
       </div>
    </footer>
