@@ -67,11 +67,11 @@ Theme name: Arch Move
    align-items: center;
 }
 
-.nav__item {
+li {
    padding: 4px 24px;
 }
 
-.nav__link {
+a {
    font-family: SF UI Display, sans-serif;
    font-size: 14px;
    font-style: normal;
@@ -80,7 +80,6 @@ Theme name: Arch Move
    letter-spacing: 0.01em;
    text-align: center;
    color: #585858;
-
 }
 
 .header__search {

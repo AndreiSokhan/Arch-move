@@ -2,14 +2,13 @@
 
    <section class="main" id="main">
       <div class="container">
-         <h1 class="main__title">Build Your Dream <span class="main__title-s">House</span></h1>
+         <h1 class="main__title"><?php the_field('main__title'); ?> <span class="main__title-s">House</span></h1>
          <div class="main__wrapper">
             <div class="main__content">
-               <p class="main__text">The first and most trusted marketplace of design & build house in The World. 100%
-                  guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
+               <p class="main__text"><?php the_field('main__text'); ?></p>
                <button class="main__btn btn">Free Consultation</button>
             </div>
-            <img class="main__image" src="<?php echo IMG_DIR; ?>/main-img.png" alt="">
+            <img class="main__image" src="<?php the_field('main__image'); ?>" alt="">
          </div>
       </div>
    </section>

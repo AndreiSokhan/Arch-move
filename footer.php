@@ -1,6 +1,16 @@
 <footer class="footer">
       <div class="container">
          <div class="footer__wrapper">
+
+         <?php
+         wp_nav_menu( [
+            'theme_location'  => 'bottom_menu',
+            'container'       => 'nav',
+            'container_class' => 'footer__nav nav',
+            'menu_class'      => 'nav__list',
+         ] );
+         ?>
+
             <!--<ul class="footer__list">
                <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
                <li class="footer__item"><a href="#" class="footer__link">How it Works</a></li>
