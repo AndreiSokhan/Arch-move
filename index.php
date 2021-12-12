@@ -33,18 +33,21 @@
          <div class="needs__inner">
             <img class="needs__image" src="<?php echo IMG_DIR; ?>/needs-img.jpg" alt="">
             <div class="needs__offer offer">
-               <div class="offer__wrapper">
+               <!--<div class="offer__wrapper">-->
+
+               <?php foreach(getNeeds() as $need): ?>
                   <div class="offer__item">
                      <div class="offer__icon-box">
-                        <img class="offer__icon" src="<?php echo IMG_DIR; ?>/needs-1.svg" alt="">
+                        <img class="offer__icon" src="<?php echo $need['img'] ?>" alt="">
                      </div>
                      <div class="offer__info">
-                        <h3 class="offer__title">100% guaranteed project completion</h3>
-                        <p class="offer__text">Build safe, comfortable and transparent with a project management
-                           application with a joint account.</p>
+                        <h3 class="offer__title"><?php echo $need['title'] ?></h3>
+                        <p class="offer__text"><?php echo $need['text'] ?></p>
                      </div>
                   </div>
-                  <div class="offer__item">
+               <?php endforeach; ?>
+
+                  <!--<div class="offer__item">
                      <div class="offer__icon-box">
                         <img class="offer__icon" src="<?php echo IMG_DIR; ?>/needs-2.svg" alt="">
                      </div>
@@ -62,8 +65,8 @@
                         <h3 class="offer__title">Get escort from the Team</h3>
                         <p class="offer__text">Monitor reports from the Arsitag team who check directly in the field.</p>
                      </div>
-                  </div>
-               </div>   
+                  </div>-->
+               <!--</div>   -->
                <button class="offer__btn btn"> CONSULTATION</button>
             </div>
          </div>

@@ -63,7 +63,7 @@ function register_post_types(){
 function getNeeds() {
 	$args = array(
 		'orderby'     => 'date',
-		'order'       => 'DESC',
+		'order'       => 'ASC',
 		'post_type'   => 'needs',
 	); 
 
@@ -72,7 +72,7 @@ function getNeeds() {
 	foreach(get_posts($args) as $post) {
 		$need['title'] = $post->post_title; 
 		$need['text'] = $post->post_content;
-		$need['img'] = $post->post_content;
+		$need['img'] = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
 		$needs[] = $need;
 	}
 
