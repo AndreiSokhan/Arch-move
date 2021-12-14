@@ -43,6 +43,7 @@
                      <div class="offer__info">
                         <h3 class="offer__title"><?php echo $need['title'] ?></h3>
                         <p class="offer__text"><?php echo $need['text'] ?></p>
+                        <i><?php echo $need['add_desc'] ?></i>
                      </div>
                   </div>
                <?php endforeach; ?>

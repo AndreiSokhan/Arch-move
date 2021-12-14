@@ -70,9 +70,13 @@ function getNeeds() {
 	$needs = [];
 
 	foreach(get_posts($args) as $post) {
+
+		$need = get_fields( $post->ID );
+
 		$need['title'] = $post->post_title; 
 		$need['text'] = $post->post_content;
 		$need['img'] = get_the_post_thumbnail_url( $post->ID, 'thumbnail' );
+		
 		$needs[] = $need;
 	}
 
